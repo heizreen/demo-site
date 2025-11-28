@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class GoogleForm {
 
-  private scriptURL = "https://script.google.com/macros/s/AKfycbyZUMJDm_VZSf7542eUJUJB-GBP2lGMTU4aqrP8V1_2wg_8TEKK9N6rtBeUNlD9PN6oUQ/exec"; // paste URL here
+  private scriptURL = "https://script.google.com/macros/s/AKfycbzUDaJontQFk-BMiCM8LQLf6wTuvFa95_YbeA5VL7Ls1YAeSv1H0em7eQ4ubOr_r44j3A/exec"; // paste URL here
 
   constructor(private http: HttpClient) {}
 
