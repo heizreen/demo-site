@@ -3,9 +3,8 @@
     <nav>
       <h1>My Brand</h1>
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a routerLink="/" routerLinkActive="active">Home</a></li>
+        <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -15,6 +14,8 @@
     <p>Building amazing experiences with Angular</p>
     <button class="cta-button">Get Started</button>
   </section>
+  <!-- Router Outlet - Components will load here -->
+  <router-outlet></router-outlet>
 
   <section class="features">
     <h2>Features</h2>

@@ -1,6 +1,15 @@
 import { bootstrapApplication } from '@angular/platform-browser';
 import { appConfig } from './app/app.config';
 import { App } from './app/app';
+import { provideRouter } from '@angular/router';
+import { HomeComponent } from './app/home/home'; // Ensure this component exists
+import { ContactComponent } from './app//contact/contact'; // Ensure this component exists
 
-bootstrapApplication(App, appConfig)
-  .catch((err) => console.error(err));
+bootstrapApplication(App, {
+  providers: [
+    provideRouter([
+      { path: '', component: HomeComponent },
+      { path: 'contact', component: ContactComponent }
+    ])
+  ]
+}).catch(err => console.error(err));
