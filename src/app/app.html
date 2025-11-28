@@ -14,6 +14,16 @@
     <p>Building amazing experiences with Angular</p>
     <button class="cta-button">Get Started</button>
   </section>
+  <form #f="ngForm" (ngSubmit)="submitForm(f.value)">
+    <input name="name" ngModel placeholder="Name" required />
+    <input name="email" type="email" ngModel placeholder="Email" required />
+    <textarea name="message" ngModel placeholder="Message"></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+
+  <p>{{ message }}</p>
+
   <!-- Router Outlet - Components will load here -->
   <router-outlet></router-outlet>
 

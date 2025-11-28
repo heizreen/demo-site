@@ -9,7 +9,8 @@ bootstrapApplication(App, {
   providers: [
     provideRouter([
       { path: '', component: HomeComponent },
-      { path: 'contact', component: ContactComponent }
+      { path: 'contact', component: ContactComponent },
+      { path: '**', component: HomeComponent }
     ])
   ]
 }).catch(err => console.error(err));
